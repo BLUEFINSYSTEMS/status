@@ -1,0 +1,56 @@
+/* app by tysonlmao */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0 auto;
+    background-color: #451952;
+    color: #E5CFF7;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-family: "VCR OSD Mono", system-ui;
+}
+h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 32px;
+    font-family: "Inter";
+}
+
+h4 {
+    font-size: 20px;
+}
+
+header {
+    /* background-color: #5B0888; */
+    border-bottom: 3px solid #E5CFF7;
+    padding: 1rem;
+    background-image: url("./assets/pexels-kai-pilger-1341279.jpg");
+    position: sticky;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 3px solid #E5CFF7;
+    border-radius: 1rem;
+    background-color: rgb(229,207,247, 0.3);
+}
+
+.text-online {
+    color: #A6FF96;
+}
+
+.text-offline {
+    color: #C70039;
+}
