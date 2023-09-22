@@ -20,11 +20,11 @@ const getData = async () => {
     }
 };
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     res.json({ "message": "why are you here?" });
 });
 
-app.get('/monitors', async (req, res) => {
+app.get('/api/monitors', async (req, res) => {
     try {
         const data = await getData();
         res.json(data);
@@ -32,6 +32,7 @@ app.get('/monitors', async (req, res) => {
         res.status(500).json({ error: "An error occurred fetching data from endpoint    " });
     }
 });
+
 
 const port = process.env.PORT || 3000;
 

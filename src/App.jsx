@@ -4,6 +4,8 @@ import './App.css'
 import 'animate.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
+
 
 const Monitors = () => {
   const [monitor, setMonitor] = useState("");
@@ -14,7 +16,7 @@ const Monitors = () => {
       const apiKey = import.meta.env.KEY
       console.log(apiKey)
       console.log("Fetching data from endpoint");
-      const res = await axios.get("http://127.0.0.1:3000/monitors", {
+      const res = await axios.get("http://127.0.0.1:3000/api/monitors", {
         headers: {
           Authorization: `Bearer ${apiKey}`
         }
@@ -27,7 +29,7 @@ const Monitors = () => {
       }
     } catch (error) {
       console.error(error);
-    }
+    }``
   }
 
   const updateServerTime = () => {
