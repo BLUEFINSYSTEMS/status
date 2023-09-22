@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './App.css'
 import 'animate.css';
-
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
@@ -12,6 +11,8 @@ const Monitors = () => {
 
   const getData = async () => {
     try {
+      const apiKey = import.meta.env.KEY
+      console.log(apiKey)
       console.log("Fetching data from endpoint");
       const res = await axios.get("http://127.0.0.1:3000/monitors", {
         headers: {
