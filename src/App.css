@@ -39,6 +39,12 @@ header {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 600px) {
+    .content {
+        padding: 1rem;
+    }
+}
+
 .container {
     margin-top: 1.5rem;
     padding: 1rem;

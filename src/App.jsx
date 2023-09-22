@@ -63,9 +63,8 @@ const Monitors = () => {
       <header>
         <div className="content animate__animated animate__fadeIn">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 mt-5">
               <h2>mission control</h2>
-              <h3>all systems operational</h3>
             </div>
             <div className="col-md-6 d-flex justify-content-end">
               <div className="text-end mt-5">
