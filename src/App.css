@@ -4,17 +4,18 @@ html {
 }
 body {
     margin: 0 auto;
-    background-color: #451952;
-    color: #E5CFF7;
+    background-color: #022127;
+    color: #00A9FF;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
-    font-family: "VCR OSD Mono", system-ui;
+    font-family: "Inter", system-ui;
 }
 h2 {
     font-size: 48px;
     text-transform: uppercase;
+    font-family: "VCR OSD Mono";
 }
 
 h3 {
@@ -28,14 +29,14 @@ h4 {
 
 header {
     /* background-color: #5B0888; */
-    border-bottom: 3px solid #E5CFF7;
+    border-bottom: 3px solid #00A9FF;
     padding: 1rem;
     background-image: url("./assets/pexels-kai-pilger-1341279.jpg");
     position: sticky;
 }
 
 .content {
-    max-width: 900px;
+    max-width: 90vw;
     margin: 0 auto;
 }
 
@@ -48,15 +49,9 @@ header {
 .container {
     margin-top: 1.5rem;
     padding: 1rem;
-    border: 3px solid #E5CFF7;
+    border: 3px solid #00A9FF;
     border-radius: 1rem;
-    background-color: rgb(229,207,247, 0.3);
 }
-
-.text-online {
-    color: #A6FF96;
-}
-
-.text-offline {
-    color: #C70039;
+.col-md-3 {
+    padding: 1rem;
 }
